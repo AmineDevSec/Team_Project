@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #3b3b3bcf;
+    height: 100vh;
+    width: 100%;
+}
+header{
+    background-color: #6b6969df;
+    padding: 6px;
+    width: 60%;
+    height: 8vh;
+    position: absolute;
+    top: 15px;
+    left: 20%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    border: #bfbbbb79 0.5px solid;
+    position: fixed;
+    z-index: 1000;
+
+}
+.title h1{
+    color: white;
+    font-family: "Quicksand","Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;    
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 4px 4px 4px #aaa;
+}
+nav{
+    width: 30vw;
+    text-align: center;
+    padding: 10px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+nav ul li{
+    display: inline-block;
+    border-left:  1px solid #ffffff5f;
+    padding-left: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Manrope",'Inter';
+    font-weight: 300;
+    font-family: sans-serif;
+}
+nav ul li a:hover{
+    color: #045858;
+    transition: 0.3s;
+    text-decoration: underline;
+
+}
+button{
+    padding: 10px 26px;
+    border-radius: 40px;
+    border: 1px solid #fffefe4a;
+    background-color: rgba(255, 255, 255, 0.078);
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+
+main{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+section{
+    margin-top: 170px;
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+section h2{
+    color: white;
+    font-family: "Quicksand","Press Start 2P", system-ui;
+    font-weight:300;
+    font-style: normal;    
+    font-size: 75px;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 4px 4px 4px #191c1da1;
+    margin-top: 20px;
+}
+section p{
+    color: white;
+    font-family: "Manrope",'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    width: 60%;
+    text-align: center;
+    line-height: 1.5;
+}
+section button{
+    border-radius: 40px;
+    border: 1px solid #fffefe4a;
+    background-color: rgba(255, 255, 255, 0.078);
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+}
+
+article{
+    width: 90%;
+    height: 80vh;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    overflow-y: scroll;   
+}
+article h1{
+    color: white;
+    font-family: "Quicksand","Press Start 2P", system-ui;
+    font-weight: 300;
+    font-style: normal;    
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: 10px;
+    text-shadow: 4px 4px 4px #aaa;
+    text-align: center;
+}
+article hr{
+    border: 0.5px solid #ffffff5f;
+    width: 20%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+article .member{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #39363636;
+    width: 90%;
+    margin: 70px auto ;
+    border-radius: 15px;
+    border: #bfbbbb79 0.5px solid;
+}
+article .member .imgg{
+    width: 30%;
+    height: 90%;
+    border-radius: 15px;
+    border: #bfbbbb79 0.5px solid;
+    overflow: hidden;
+}
+article .member .imgg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+article .member .info{
+    height: 428px;
+    width: 60%;
+    margin: 0px 40px;
+    padding: 20px;
+    color: white;
+    font-family: "Manrope",'Inter', sans-serif;
+    gap: 10px;
+    overflow: hidden;
+}
+article .member .info h3{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px 2px #000000c7;
+}
+article .member .info p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+article .member .info hr{
+    width: 90%;
+    margin: auto;
+}
+article .member .project .poject{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid #8312125f;
+}
