@@ -1,12 +1,19 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #3b3b3bcf;
+    background-image: url(iimage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;            /* or overflow: scroll; */
+    scrollbar-width: none;       /* Firefox */
+    -ms-overflow-style: none;
     height: 100vh;
     width: 100%;
 }
 header{
-    background-color: #6b6969df;
+    background-color: #0a0909b9;
     padding: 6px;
     width: 60%;
     height: 8vh;
@@ -18,7 +25,7 @@ header{
     justify-content: space-around;
     align-items: center;
     border-radius: 20px;
-    border: #bfbbbb79 0.5px solid;
+    border: #dfdede79 0.5px solid;
     position: fixed;
     z-index: 1000;
 
@@ -76,13 +83,14 @@ button{
 
 
 main{
-    margin-top: 50px;
+    padding-top: 50px;
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
+    background: #000000d0;
 }
 section{
     margin-top: 170px;
@@ -126,11 +134,14 @@ section button{
 }
 
 article{
-    width: 90%;
+    width: 100%;
     height: 80vh;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     border-radius: 20px;
-    overflow-y: scroll;   
+    overflow-y: auto;
+    scrollbar-width: none;       /* Firefox */
+    -ms-overflow-style: none; 
+    background-color: #000000f9;     
 }
 article h1{
     color: white;
@@ -154,11 +165,11 @@ article .member{
     justify-content: space-between;
     gap: 20px;
     padding: 20px;
-    background-color: #39363636;
+    background-color: #3b3b3bcf;
     width: 90%;
     margin: 70px auto ;
     border-radius: 15px;
-    border: #bfbbbb79 0.5px solid;
+    border: #1c1c1c79 0.5px solid;
 }
 article .member .imgg{
     width: 30%;
@@ -180,7 +191,13 @@ article .member .info{
     color: white;
     font-family: "Manrope",'Inter', sans-serif;
     gap: 10px;
-    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+article .member .info {
+  overflow: auto;            /* or overflow: scroll; */
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE 10+ (legacy) */
 }
 article .member .info h3{
     font-size: 25px;
@@ -193,12 +210,50 @@ article .member .info p{
 }
 article .member .info hr{
     width: 90%;
-    margin: auto;
+    margin: 20px;
 }
-article .member .project .poject{
-    width: 50%;
-    height: 100%;
-    text-align: center;
+article .member .poject{
+    width: 40%;
+    height: 25%;
+    background-color: #292828b9;
+    margin: 1px;
+    margin-left: 30px;
+    border-radius: 10px;
+    border-right: 1px solid #cac2c295;
+    position: relative;
+}
+article .member .poject h5{
+    margin: 0px;
     padding: 10px;
-    border-right: 1px solid #8312125f;
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 300;
+    font-style: normal;    
+    font-size: 20px;
+    letter-spacing: 2px;
+    display: inline-block;
 }
+article .member .poject span{
+    font-family: sans-serif;
+    font-size: large;
+    position: absolute;
+    margin: 10px;
+    right: 10px;
+    
+}
+article .member .poject p{
+    color: white;
+    font-family: "Manrope",'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 250;
+    padding: 10px;
+    margin: 0px;
+}
+article .member .poject a{
+    color: #7db40feb;
+    text-decoration: none;
+}
+
+
+
+   
