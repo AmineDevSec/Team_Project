@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(iimage.png);
+    background-image: url(img_2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,7 +13,7 @@ body{
     width: 100%;
 }
 header{
-    background-color: #0a0909b9;
+    background-color: #070721c3;
     padding: 6px;
     width: 60%;
     height: 8vh;
@@ -25,7 +25,7 @@ header{
     justify-content: space-around;
     align-items: center;
     border-radius: 20px;
-    border: #dfdede79 0.5px solid;
+    border: #033decfa 0.5px solid;
     position: fixed;
     z-index: 1000;
 
@@ -38,7 +38,7 @@ header{
     font-size: 30px;
     letter-spacing: 2px;
     margin: 0;
-    text-shadow: 4px 4px 4px #aaa;
+    text-shadow: 4px 4px 4px #033decfa;
 }
 nav{
     width: 30vw;
@@ -53,7 +53,7 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    border-left:  1px solid #ffffff5f;
+    border-left:  1px solid #003ffdfe;
     padding-left: 10px;
 }
 nav ul li a{
@@ -65,7 +65,7 @@ nav ul li a{
     font-family: sans-serif;
 }
 nav ul li a:hover{
-    color: #045858;
+    color: #03c9ece0;
     transition: 0.3s;
     text-decoration: underline;
 
@@ -73,24 +73,34 @@ nav ul li a:hover{
 button{
     padding: 10px 26px;
     border-radius: 40px;
-    border: 1px solid #fffefe4a;
+    border: 1px solid #0364ecfa;
     background-color: rgba(255, 255, 255, 0.078);
     font-size: 20px;
     color: white;
     cursor: pointer;
+    font-family: "Quicksand","Press Start 2P", sans-serif;
     
+}
+button:hover{
+    background-color: #0303ec54;
+    box-shadow: 0 0 10px #0332ecfa;
+    color: white;
+    transition: 0.3s;
+    transform: scale(1.05);
 }
 
 
+
+
 main{
-    padding-top: 50px;
+    padding-top: 40px;
     width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    background: #000000d0;
+    background: #00000069;
 }
 section{
     margin-top: 170px;
@@ -110,22 +120,23 @@ section h2{
     font-size: 75px;
     letter-spacing: 2px;
     margin: 0;
-    text-shadow: 4px 4px 4px #191c1da1;
+    text-shadow: 4px 4px 4px #030becfa;
     margin-top: 20px;
 }
 section p{
     color: white;
-    font-family: "Manrope",'Inter', sans-serif;
+    font-family: 'Orbitron','Inter', sans-serif;
     font-size: 20px;
     font-weight: 300;
     width: 60%;
+    letter-spacing: 2px;
     text-align: center;
     line-height: 1.5;
 }
 section button{
     border-radius: 40px;
-    border: 1px solid #fffefe4a;
-    background-color: rgba(255, 255, 255, 0.078);
+    border: 1px solid #0519d1f0;
+    background-color: rgba(255, 255, 255, 0);
     font-size: 20px;
     color: white;
     cursor: pointer;
@@ -137,11 +148,10 @@ article{
     width: 100%;
     height: 80vh;
     margin-bottom: 40px;
-    border-radius: 20px;
     overflow-y: auto;
     scrollbar-width: none;       /* Firefox */
     -ms-overflow-style: none; 
-    background-color: #000000f9;     
+    background-color: #00000049;     
 }
 article h1{
     color: white;
@@ -151,11 +161,11 @@ article h1{
     font-size: 30px;
     letter-spacing: 2px;
     margin: 10px;
-    text-shadow: 4px 4px 4px #aaa;
+    text-shadow: 4px 4px 4px #0057e2fd;
     text-align: center;
 }
 article hr{
-    border: 0.5px solid #ffffff5f;
+    border: 0.5px solid #02056bfd;
     width: 20%;
     margin: auto;
     margin-bottom: 20px;
@@ -165,18 +175,20 @@ article .member{
     justify-content: space-between;
     gap: 20px;
     padding: 20px;
-    background-color: #3b3b3bcf;
+    background-color: #000418;
     width: 90%;
     margin: 70px auto ;
     border-radius: 15px;
-    border: #1c1c1c79 0.5px solid;
+    border: #011979fb 0.5px solid;
 }
 article .member .imgg{
     width: 30%;
-    height: 90%;
+    height: 80%;
     border-radius: 15px;
-    border: #bfbbbb79 0.5px solid;
+    background-color: #000000;
+    border: #011672 0.5px solid;
     overflow: hidden;
+    box-shadow:  0px  0 15px 5px #020557b1;
 }
 article .member .imgg img{
     width: 100%;
@@ -186,10 +198,10 @@ article .member .imgg img{
 article .member .info{
     height: 428px;
     width: 60%;
-    margin: 0px 40px;
+    margin: 10px 40px;
     padding: 20px;
     color: white;
-    font-family: "Manrope",'Inter', sans-serif;
+    font-family: 'Rajdhani','Inter', sans-serif;
     gap: 10px;
     display: flex;
     flex-wrap: wrap;
@@ -202,11 +214,12 @@ article .member .info {
 article .member .info h3{
     font-size: 25px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 2px 2px 2px #000000c7;
+    text-shadow: 2px 2px 2px #0488da;
 }
 article .member .info p{
     font-size: 18px;
     line-height: 1.5;
+    font-family: 'Share Tech Mono', monospace;
 }
 article .member .info hr{
     width: 90%;
@@ -215,12 +228,16 @@ article .member .info hr{
 article .member .poject{
     width: 40%;
     height: 25%;
-    background-color: #292828b9;
+    background-color: #050229;
     margin: 1px;
     margin-left: 30px;
     border-radius: 10px;
-    border-right: 1px solid #cac2c295;
+    border-right: 1px solid #0000a9;
     position: relative;
+}
+article .member .poject:hover{
+    box-shadow: 0 0 10px 2px #010163;
+    transition: 0.3s;
 }
 article .member .poject h5{
     margin: 0px;
@@ -250,7 +267,7 @@ article .member .poject p{
     margin: 0px;
 }
 article .member .poject a{
-    color: #7db40feb;
+    color: #027ce0eb;
     text-decoration: none;
 }
 
