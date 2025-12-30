@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(img_2.png);
+    background-image: url('imgs/img_2.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -151,7 +151,6 @@ article{
     overflow-y: auto;
     scrollbar-width: none;       /* Firefox */
     -ms-overflow-style: none; 
-    background-color: #00000049;     
 }
 article h1{
     color: white;
@@ -271,6 +270,97 @@ article .member .poject a{
     text-decoration: none;
 }
 
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
 
-   
+
+
+
+
+.contact-section {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+  width: 80%;
+  max-width: 1100px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 35%;
+}
+
+.card {
+  background: #000418;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: clamp(12px, 1.5vw, 16px);
+  padding: 20px;
+  border-radius: 14px;
+    border: #011979fb 0.5px solid;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+}
+
+.card a {
+  color: #ffffff;
+  text-decoration:  none;
+  font-size: 14px;
+}
+
+
+.contact-form {
+  background: #000418;
+  padding: 30px;
+  border-radius: 16px;
+  width: 65%;
+  border: #011979fb 0.5px solid;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #1e447e76;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+button {
+  background: #010320d0;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  border: #011979fb 0.5px solid;
+}
+
+button:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
